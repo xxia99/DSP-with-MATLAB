@@ -14,7 +14,7 @@ $$
 Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to![](http://latex.codecogs.com/svg.latex?)
 
 $$
-\min_{y ∈ T_N}  （∥ x(t) − y(t) ∥）_{L 2 ([0,1])}
+\min_{y ∈ T_N}  {∥ x(t) − y(t) ∥}_{L 2 ([0,1])}
 $$
 
 ## Problem 2
@@ -174,7 +174,7 @@ B=
 20009\\
 \end{bmatrix}
 $$
-Note, the exact solution is $x = [ 1\,\,\,\,1 ]^T$ .
+Note, the exact solution is $x = [ 1 \\ 1 ]^T$ .
 
 1. Determine the condition number of $A^TA$.
 2. Compute the least-squares solution using the formula $\hat{x} = (A^T A)^{−1} A^T b $explicitly.

@@ -14,7 +14,7 @@ $$
 Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to![](http://latex.codecogs.com/svg.latex?)
 
 $$
-\min_{y ∈ T_N}  ∥ x(t) − y(t) ∥_{L 2 ([0,1])}
+\min_{y ∈ T_N}  （∥ x(t) − y(t) ∥）_{L 2 ([0,1])}
 $$
 
 ## Problem 2
@@ -139,7 +139,7 @@ A=
 8&-4&2\\
 \end{bmatrix}
 \,\,\,\,\,
-&y=
+y=
 \begin{bmatrix}
 1\\
 2\\
@@ -157,7 +157,7 @@ Find the total-least squares solution to the above linear inverse problem.
 Suppose that you wish to solve for x given that $Ax = b$ where
 
 $$
-&A=
+A=
 \begin{bmatrix}
 10000&10001\\
 10001&10002\\
@@ -165,7 +165,7 @@ $$
 10003&10004\\
 10004&10005\\
 \end{bmatrix}
-&B=
+B=
 \begin{bmatrix}
 20001\\
 20003\\

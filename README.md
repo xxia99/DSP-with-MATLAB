@@ -6,9 +6,9 @@ Deﬁne the continuous-time signal x(t) on [0, 1] as
 $$
  x(t)=
  \begin{cases}
- 4t,\\\\&0 ≤ t < 1/4\newline
- -4t+2,\\\\&1/4 ≤ t ≤ 1/2\newline
- -sin(20\pi t),\\\\&1/2 ≤ t ≤ 1\newline
+ 4t,&0 ≤ t < 1/4\newline
+ -4t+2,&1/4 ≤ t ≤ 1/2\newline
+ -sin(20\pi t),&1/2 ≤ t ≤ 1\newline
  \end{cases}
 $$
 Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to![](http://latex.codecogs.com/svg.latex?)

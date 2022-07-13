@@ -159,11 +159,11 @@ Suppose that you wish to solve for x given that $Ax = b$ where
 $$
 A=
 \begin{bmatrix}
-10000&10001\\
-10001&10002\\
-10002&10003\\
-10003&10004\\
-10004&10005\\
+10000&10001\newline
+10001&10002\newline
+10002&10003\newline
+10003&10004\newline
+10004&10005\newline
 \end{bmatrix}
 B=
 \begin{bmatrix}

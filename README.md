@@ -11,8 +11,7 @@ $$
  -sin(20\pi t),&1/2 ≤ t ≤ 1\newline
  \end{cases}
 $$
-Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to![](http://latex.codecogs.com/svg.latex?)
-
+Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to
 $$
 \min_{y ∈ T_N}  {∥ x(t) − y(t) ∥}_{L 2 ([0,1])}
 $$
@@ -94,16 +93,16 @@ for some set of expansion coeﬃcents
 $$
 \alpha = 
 \begin{bmatrix}
-\alpha_{-B}\\
-\vdots\\
-\alpha_{0}\\
-\vdots\\
+\alpha_{-B}\newline
+\vdots\newline
+\alpha_{0}\newline
+\vdots\newline
 \alpha_{B}
 \end{bmatrix}
 $$
 We observe samples $M$ samples of $f(t)$ at locations $t_1,t_2,\cdots, t_M$which are not necessarily uniformly spaced, 
 $$
-y[m] = f(t m ) \\\\\\\\m = 1, . . . , M.\tag 2
+y[m] = f(t m ) m = 1, . . . , M.\tag 2
 $$
 
 1. Write a MATLAB function $sampmat.m$ that takes a vector smptimes of length $M$ containing the sample locations and a dimension $N = 2B+1$ (which you can assume is odd), and returns a $M × N$ matrix $A$ such that when $A$ is applied to a vector of Fourier series coeﬃcients (as in $(2)$), it returns the sample values in $(3)$.

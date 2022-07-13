@@ -11,7 +11,8 @@ $$
  -sin(20\pi t),\,\,&1/2 ≤ t ≤ 1\newline
  \end{cases}
 $$
-Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to
+Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to![](http://latex.codecogs.com/svg.latex?)
+
 $$
 \min_{y ∈ T_N}  ∥ x(t) − y(t) ∥_{L 2 ([0,1])}
 $$
@@ -20,7 +21,7 @@ $$
 
 ### Problem Description
 
-The dual B-spline functions can be written as
+The dual B-spline functions can be written as ![](http://latex.codecogs.com/svg.latex?）
 $$
 \tilde{b}_L (t) = \sum^{\infty}_{l=\infty}h_L[l]b_L (t-l).
 $$

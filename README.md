@@ -54,7 +54,7 @@ $$
 $$
 for $L = 1, 2, 3, 4, $ where
 $$
-v_L = \overline{Span}(\{b_L(t − n)\}_{n\in \Z} ).
+v_L = \overline{Span}(\{b_L(t − n)\}_{n\in Z} ).
 $$
 
 ## Problem 4

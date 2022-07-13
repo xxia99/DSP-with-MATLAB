@@ -77,7 +77,7 @@ The ﬁle $ blocksdeconv.mat$ contains the vectors:
 
 ​	• $y_n$ : a noisy observation of $y$. The noise is iid Gaussian with standard deviation .01.
 
-1. Write a function which takes an vector $h$ of length $L$ and a number $N$, and returns the $M ×N$ (with $M = N + L − 1$) matrix $A$ such that for any $x \in \R^N$ , $Ax$ is the vector of non-zero values of h convolved with $x$.
+1. Write a function which takes an vector $h$ of length $L$ and a number $N$, and returns the $M ×N$ (with $M = N + L − 1$) matrix $A$ such that for any $x \in R^N$ , $Ax$ is the vector of non-zero values of h convolved with $x$.
 
 2. Use MATLAB’s $svd()$ command 1 to calculate the SVD of $A$. What is the largest singular value? What is the smallest singular value? Calculate $A^†y$ and plot it ( $y$ is the noise-free data).
 

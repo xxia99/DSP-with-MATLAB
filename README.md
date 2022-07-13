@@ -6,9 +6,9 @@ Deﬁne the continuous-time signal x(t) on [0, 1] as
 $$
  x(t)=
  \begin{cases}
- 4t,\,\,&0 ≤ t < 1/4\newline
- -4t+2,\,\,&1/4 ≤ t ≤ 1/2\newline
- -sin(20\pi t),\,\,&1/2 ≤ t ≤ 1\newline
+ 4t,\\\\&0 ≤ t < 1/4\newline
+ -4t+2,\\\\&1/4 ≤ t ≤ 1/2\newline
+ -sin(20\pi t),\\\\&1/2 ≤ t ≤ 1\newline
  \end{cases}
 $$
 Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to![](http://latex.codecogs.com/svg.latex?)
@@ -103,7 +103,7 @@ $$
 $$
 We observe samples $M$ samples of $f(t)$ at locations $t_1,t_2,\cdots, t_M$which are not necessarily uniformly spaced, 
 $$
-y[m] = f(t m ),\,\,\, m = 1, . . . , M.\tag 2
+y[m] = f(t m ) \\\\\\\\m = 1, . . . , M.\tag 2
 $$
 
 1. Write a MATLAB function $sampmat.m$ that takes a vector smptimes of length $M$ containing the sample locations and a dimension $N = 2B+1$ (which you can assume is odd), and returns a $M × N$ matrix $A$ such that when $A$ is applied to a vector of Fourier series coeﬃcients (as in $(2)$), it returns the sample values in $(3)$.
@@ -132,20 +132,20 @@ Suppose we make a noisy observation of y = Ax, with
 $$
 A=
 \begin{bmatrix}
-2&4&-1\\
-1&-2&1\\
-4&0&1\\
-5&6&-1\\
-8&-4&2\\
+2&4&-1\newline
+1&-2&1\newline
+4&0&1\newline
+5&6&-1\newline
+8&-4&2\newline
 \end{bmatrix}
 \\\\\\\\\\
 y=
 \begin{bmatrix}
-1\\
-2\\
--1\\
--2\\
-5\\
+1\newline
+2\newline
+-1\newline
+-2\newline
+5\newline
 \end{bmatrix}
 $$
 Find the total-least squares solution to the above linear inverse problem. 

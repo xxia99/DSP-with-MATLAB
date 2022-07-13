@@ -138,7 +138,7 @@ A=
 5&6&-1\\
 8&-4&2\\
 \end{bmatrix}
-\,\,\,\,\,
+\\\\\\\\\\
 y=
 \begin{bmatrix}
 1\\
@@ -167,11 +167,11 @@ A=
 \end{bmatrix}
 B=
 \begin{bmatrix}
-20001\\
-20003\\
-20005\\
-20007\\
-20009\\
+20001\newline
+20003\newline
+20005\newline
+20007\newline
+20009\newline
 \end{bmatrix}
 $$
 Note, the exact solution is $x = [ 1 \\ 1 ]^T$ .

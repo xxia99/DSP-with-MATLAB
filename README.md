@@ -57,11 +57,6 @@ $$
 v_L = \overline{Span}(\{b_L(t − n)\}_{n\in \Z} ).
 $$
 
-$$
-\int_{-\infty}^{\infty}x(t)\tilde{b}_L(t − n) dt = \sum_{\ell = -\infty}^{\infty}h_{L}[\ell]x(t)b_L(t−n−\ell) dt.
-$$
-So the ﬁrst step is to write a function that numerically integrates $x(t) $with shifts of $b_L (t)$ over an appropriate range.
-
 ## Problem 4
 
 ### Problem Description

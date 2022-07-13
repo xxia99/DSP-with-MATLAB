@@ -43,8 +43,8 @@ Let $x(t)$ be the signal
 $$
 x(t)=
 \begin{cases}
-1/2, \,\,&0\le t \le 10, \\
--sin(\pi t/10),\,\,&10\le t \le 20\\
+1/2,&0\le t \le 10, \newline
+-sin(\pi t/10),&10\le t \le 20\newline
 \end{cases}
 $$
 

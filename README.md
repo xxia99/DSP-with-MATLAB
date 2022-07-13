@@ -54,9 +54,9 @@ $$
 $$
 for $L = 1, 2, 3, 4, $ where
 $$
-\nu_L = \overline{Span}(\{b_L(t − n)\}_{n\in \Z} ).
+v_L = \overline{Span}(\{b_L(t − n)\}_{n\in \Z} ).
 $$
-To do this, you will need to integrate x(t) against the dual B-splines. You can compute this integral using
+
 $$
 \int_{-\infty}^{\infty}x(t)\tilde{b}_L(t − n) dt = \sum_{\ell = -\infty}^{\infty}h_{L}[\ell]x(t)b_L(t−n−\ell) dt.
 $$

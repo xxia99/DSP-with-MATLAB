@@ -130,7 +130,7 @@ $$
 
 Suppose we make a noisy observation of y = Ax, with
 $$
-&A=
+A=
 \begin{bmatrix}
 2&4&-1\\
 1&-2&1\\

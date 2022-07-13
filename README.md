@@ -20,7 +20,7 @@ $$
 
 ### Problem Description
 
-The dual B-spline functions can be written as
+The dual B-spline functions can be written as ![](http://latex.codecogs.com/svg.latex?\tilde{b}_L(t) = \sum^{\infty}_{l=\infty}h_L[l]b_L(t-l).)
 $$
 \tilde{b}_L(t) = \sum^{\infty}_{l=\infty}h_L[l]b_L(t-l).
 $$

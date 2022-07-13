@@ -22,7 +22,7 @@ $$
 
 The dual B-spline functions can be written as
 $$
-\hat{b}_L(t) = \sum^{\infty}_{l=\infty}h_L[l]b_L(t-l).
+\hat{b}_L(t) = \sum^{\infty}_{l=\infty}h_L[l]b_L(t-l)
 $$
 
 1. Compute $h_L [n]$ for $−20 ≤ n ≤ 20$ for $L = 1, 2, 3, 4$. To do this, you will need to approximate the integral 

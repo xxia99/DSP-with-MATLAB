@@ -6,14 +6,14 @@ Deﬁne the continuous-time signal x(t) on [0, 1] as
 $$
  x(t)=
  \begin{cases}
- 4t,\,\,&0 ≤ t < 1/4\newline
- -4t+2,\,\,&1/4 ≤ t ≤ 1/2\newline
- -sin(20\pi t),\,\,&1/2 ≤ t ≤ 1\newline
+ 4t,&0 ≤ t < 1/4\newline
+ -4t+2,&1/4 ≤ t ≤ 1/2\newline
+ -sin(20\pi t),&1/2 ≤ t ≤ 1\newline
  \end{cases}
 $$
 Write MATLAB code that ﬁnds the closest point $\hat{x}(t)$ in $T_N$ to $x(t)$ for any ﬁxed $N$. By “closest point,” we mean that $\hat{x}(t)$ is the solution to
 $$
-\min_{y ∈ T_N}  ∥ x(t) − y(t) ∥_{L 2 ([0,1])}
+\min_{y ∈ T_N}  {∥ x(t) − y(t) ∥}_{L 2 ([0,1])}
 $$
 
 ## Problem 2
@@ -22,7 +22,7 @@ $$
 
 The dual B-spline functions can be written as
 $$
-\tilde{b}_L (t) = \sum^{\infty}_{l=\infty}h_L[l]b_L (t-l).
+b_L(t) = \sum^{\infty}_{l=\infty}h_L[l]b_L(t-l)
 $$
 
 1. Compute $h_L [n]$ for $−20 ≤ n ≤ 20$ for $L = 1, 2, 3, 4$. To do this, you will need to approximate the integral 
@@ -43,8 +43,8 @@ Let $x(t)$ be the signal
 $$
 x(t)=
 \begin{cases}
-1/2, \,\,&0\le t \le 10, \\
--sin(\pi t/10),\,\,&10\le t \le 20\\
+1/2,&0\le t \le 10, \newline
+-sin(\pi t/10),&10\le t \le 20\newline
 \end{cases}
 $$
 
@@ -54,13 +54,8 @@ $$
 $$
 for $L = 1, 2, 3, 4, $ where
 $$
-\nu_L = \overline{Span}(\{b_L(t − n)\}_{n\in \Z} ).
+v_L = \overline{Span}(\{b_L(t − n)\}_{n\in Z} ).
 $$
-To do this, you will need to integrate x(t) against the dual B-splines. You can compute this integral using
-$$
-\int_{-\infty}^{\infty}x(t)\tilde{b}_L(t − n) dt = \sum_{\ell = -\infty}^{\infty}h_{L}[\ell]x(t)b_L(t−n−\ell) dt.
-$$
-So the ﬁrst step is to write a function that numerically integrates $x(t) $with shifts of $b_L (t)$ over an appropriate range.
 
 ## Problem 4
 
@@ -76,7 +71,7 @@ The ﬁle $ blocksdeconv.mat$ contains the vectors:
 
 ​	• $y_n$ : a noisy observation of $y$. The noise is iid Gaussian with standard deviation .01.
 
-1. Write a function which takes an vector $h$ of length $L$ and a number $N$, and returns the $M ×N$ (with $M = N + L − 1$) matrix $A$ such that for any $x \in \R^N$ , $Ax$ is the vector of non-zero values of h convolved with $x$.
+1. Write a function which takes an vector $h$ of length $L$ and a number $N$, and returns the $M ×N$ (with $M = N + L − 1$) matrix $A$ such that for any $x \in R^N$ , $Ax$ is the vector of non-zero values of h convolved with $x$.
 
 2. Use MATLAB’s $svd()$ command 1 to calculate the SVD of $A$. What is the largest singular value? What is the smallest singular value? Calculate $A^†y$ and plot it ( $y$ is the noise-free data).
 
@@ -93,16 +88,16 @@ for some set of expansion coeﬃcents
 $$
 \alpha = 
 \begin{bmatrix}
-\alpha_{-B}\\
-\vdots\\
-\alpha_{0}\\
-\vdots\\
+\alpha_{-B}\newline
+\vdots\newline
+\alpha_{0}\newline
+\vdots\newline
 \alpha_{B}
 \end{bmatrix}
 $$
 We observe samples $M$ samples of $f(t)$ at locations $t_1,t_2,\cdots, t_M$which are not necessarily uniformly spaced, 
 $$
-y[m] = f(t m ),\,\,\, m = 1, . . . , M.\tag 2
+y[m] = f(t m ) m = 1, . . . , M.\tag 2
 $$
 
 1. Write a MATLAB function $sampmat.m$ that takes a vector smptimes of length $M$ containing the sample locations and a dimension $N = 2B+1$ (which you can assume is odd), and returns a $M × N$ matrix $A$ such that when $A$ is applied to a vector of Fourier series coeﬃcients (as in $(2)$), it returns the sample values in $(3)$.
@@ -129,22 +124,22 @@ $$
 
 Suppose we make a noisy observation of y = Ax, with
 $$
-&A=
+A=
 \begin{bmatrix}
-2&4&-1\\
-1&-2&1\\
-4&0&1\\
-5&6&-1\\
-8&-4&2\\
+2&4&-1\newline
+1&-2&1\newline
+4&0&1\newline
+5&6&-1\newline
+8&-4&2\newline
 \end{bmatrix}
-\,\,\,\,\,
-&y=
+\\\\\\\\\\
+y=
 \begin{bmatrix}
-1\\
-2\\
--1\\
--2\\
-5\\
+1\newline
+2\newline
+-1\newline
+-2\newline
+5\newline
 \end{bmatrix}
 $$
 Find the total-least squares solution to the above linear inverse problem. 
@@ -156,24 +151,24 @@ Find the total-least squares solution to the above linear inverse problem.
 Suppose that you wish to solve for x given that $Ax = b$ where
 
 $$
-&A=
+A=
 \begin{bmatrix}
-10000&10001\\
-10001&10002\\
-10002&10003\\
-10003&10004\\
-10004&10005\\
+10000&10001\newline
+10001&10002\newline
+10002&10003\newline
+10003&10004\newline
+10004&10005\newline
 \end{bmatrix}
-&B=
+B=
 \begin{bmatrix}
-20001\\
-20003\\
-20005\\
-20007\\
-20009\\
+20001\newline
+20003\newline
+20005\newline
+20007\newline
+20009\newline
 \end{bmatrix}
 $$
-Note, the exact solution is $x = [ 1\,\,\,\,1 ]^T$ .
+Note, the exact solution is $x = [ 1 \\ 1 ]^T$ .
 
 1. Determine the condition number of $A^TA$.
 2. Compute the least-squares solution using the formula $\hat{x} = (A^T A)^{−1} A^T b $explicitly.

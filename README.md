@@ -175,3 +175,7 @@ Note, the exact solution is $x = [ 1 \\ 1 ]^T$ .
 3. Compute the solution using the QR decomposition. 
 4. Compute the solution using the Cholesky factorization.
 5. Compute the solution using the MATLAB backslash command “ \ ”. 
+
+
+
+Author: xxia60@gatech.edu
